@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		/sata/app/cloudflared/bin/start.sh
+		;;
+	stop)
+		/sata/app/cloudflared/bin/stop.sh
+		;;
+	restart | reload)
+		"$0" stop
+		"$0" start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+		;;
+esac

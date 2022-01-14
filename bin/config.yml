@@ -1,0 +1,12 @@
+# 文件路径 ~/.cloudflared/config.yml
+
+#url: http://localhost:80
+tunnel: < UUID >
+credentials-file: /root/.cloudflared/< UUID >.json
+
+ingress:
+  - hostname: x3p.< 域名.com >
+    service: http://localhost:80
+  - hostname: x3pd.< 域名.com >
+    service: http://localhost:8200
+  - service: http_status:404
