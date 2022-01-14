@@ -1,4 +1,4 @@
-# cloudflared-on-onespace
+# [cloudflared-on-onespace](https://github.com/initdc/cloudflared-on-onespace)
 
 > Your cloudflared tunnel client on onespace (arm64)
 
@@ -43,19 +43,22 @@ vi ~/.cloudflared/config.yml
 /sata/app/cloudflared/bin/start.sh
 
 # 停止
-/sata/app/cloudflared/bin/stop.sh
+# /sata/app/cloudflared/bin/stop.sh
+现已原生支持
 ```
 
 ## 自启
 
 ```sh
-cp /sata/app/cloudflared/S99cfd /etc/init.d/S99cfd
+# cp /sata/app/cloudflared/S99cfd /etc/init.d/S99cfd
+现已原生支持
 ```
 
 ## 卸载
 
 ```sh
-rm -rf /sata/app/cloudflared/
+# rm -rf /sata/app/cloudflared/
+现已原生支持
 ```
 
 ## 感谢
